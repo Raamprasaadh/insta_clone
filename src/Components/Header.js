@@ -11,9 +11,9 @@ import { ReactComponent as SearchIcon } from "../svgs/search.svg";
 export default function Header() {
   return (
     <section id="header" className="w-full border-2 border-header_border">
-      <div className="container bg-white h-14 w-2/3 p-4 flex flex-row items-center justify-evenly mx-auto">
+      <div className="container bg-white h-14 md:w-2/3 p-4 flex flex-row items-center justify-evenly mx-auto">
         {/**Logo image */}
-        <div className="w-1/3">
+        <div className="w-1/2 md:w-1/3">
           <img className="w-28 h-10 hover:cursor-pointer" alt="logo" src={logo} />
         </div>
         {/**Header search */}
@@ -27,12 +27,12 @@ export default function Header() {
           </div>
         </div>
         {/**Header Links */}
-        <div className="flex flex-row w-1/3 justify-end space-x-6 ">
-          <Home className="w-6 h-6 hover:cursor-pointer icon" />
-          <Inbox className="w-6 h-6 hover:cursor-pointer icon" />
-          <Add className="w-6 h-6 hover:cursor-pointer icon" />
-          <Find className="w-6 h-6 hover:cursor-pointer icon" />
-          <Activity className="w-6 h-6 hover:cursor-pointer icon" />
+        <div className="flex flex-row w-1/2 md:w-1/3 justify-end space-x-6 ">
+          <Home className="min-w-auto min-h-auto max-w-6 max-h-6 shrink-0 hover:cursor-pointer icon"/>
+          <Inbox className="min-w-auto min-h-auto max-w-6 max-h-6 shrink-0 hover:cursor-pointer icon" />
+          <Add className="min-w-auto min-h-auto max-w-6 max-h-6 shrink-0 hover:cursor-pointer icon" />
+          <Find className="min-w-auto min-h-auto max-w-6 max-h-6 shrink-0 hover:cursor-pointer icon" />
+          <Activity className="w-6 h-6 shrink-0 hover:cursor-pointer icon" />
           <img
             className="w-6 h-6 hover:cursor-pointer rounded-full"
             src={profilePic}
