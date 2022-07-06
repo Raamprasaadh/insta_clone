@@ -4,8 +4,7 @@ import BodyRight from "./Body-Right";
 function Body() {
   return (
     <section id="body">
-      <div className="bg-green-500 flex flex-row min-h-full min-w-full">
-        Body
+      <div className="flex flex-row min-h-full space-x-6 w-auto mx-80 justify-center">
         <BodyLeft/>
         <BodyRight/>
       </div>
